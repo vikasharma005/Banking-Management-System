@@ -1,0 +1,11 @@
+account_no,name,address,phone,email,aadhar_no,account_type,status,balance
+10001,Deepak Sharma,G-4 Shiv nagar,9887453018,deepak@sharma.com,1238-1243-4545,Saving,active,126200.0
+10002,Raju Verma,152-A Shyam Vihar,8190654818,raju@hotmail.com,4861-5126-4345,Current,Close,10060.58
+10003,Arnav,178--f/52-B Raja Park ,6320597108,arnav@gmail.co.in,1025-6560-4545,Saving,Active,50053.09
+10004,Ashutosh,C-105 Krishna vihar,1121176543,ashutosh@gmail.com,2408-3000-6576,Saving,Close,56000.0
+10005,Rohit singh,151-C/D-40 radha bihar,1443984062,rohit@yahoo.com,9852-5562-5600,Saving,Active,20560.93
+10006,Sam,f-12 Amar nagar,7895463210,sam@gmail.com,3402-9450-5656,Current,Active,280600.0
+10007,Tony,56-A Amar Vihar,4658267931,tony@yahoo.com,9805-1264-8864,Saving,active,4000.0
+10008,Umang,501-G/23 Krishna Sarovar,9084537109,umang563@gmail.com,7889-2331-6745,Current,active,1505550.0
+10009,Yash,"07/F 10, Raja Park",6609873421,yash@yahoo.co.au,5544-7809-1123,Current,active,2000.0
+10011,Arun Srivastav,"C-22 Karan Vihar, Alwar",7654360120,srivastav.arun@gmail.com,0097-7653-0001,Current,active,50000.0

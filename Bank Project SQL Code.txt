@@ -1,0 +1,57 @@
+Use these commands to create a data base and table in MySQL
+
+
+CREATE DATABASE Banking;
+USE Banking;
+
+----------------------------------------------------------
+
+CREATE TABLE customers (
+  `account_no` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(30) NOT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `phone` varchar(15) NOT NULL,
+  `email` varchar(80) DEFAULT NULL,
+  `aadhar_no` varchar(20) NOT NULL,
+  `account_type` varchar(20) DEFAULT NULL,
+  `status` char(15) DEFAULT NULL,
+  `balance` float(15,2) NOT NULL,
+  PRIMARY KEY (`account_no`)
+);
+
+--------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO customers VALUES (10001, 'karan Sharma', 'G-2 Shyam nagar', '9887453018', 'karan@sharma.com', '1238-1243-4545', 'Saving', 'Active', 126200.00);
+INSERT INTO customers VALUES (10002, 'Rajan Verma', '152-A Budh Vihar', '8190654818', 'rajan@hotmail.com', '4861-5126-4345', 'Current', 'Close', 10060.58);
+INSERT INTO customers VALUES (10003, 'Arnav', '178--f/52-B Raja Park ', '6320597108', 'arnav@gmail.co.in', '1025-6560-4545', 'Saving', 'Active', 50053.09);
+INSERT INTO customers VALUES (10004, 'Ashish', 'C-105 Krishna arovar', '1121176543', 'ashish@gmail.com', '2408-3000-6576', 'Saving', 'Close', 56000.00);
+INSERT INTO customers VALUES (10005, 'Rohit singh', '151-C/D-40 radha bihar', '1443984062', 'rohit@yahoo.com', '9852-5562-5600', 'Saving', 'Active', 20560.93);
+INSERT INTO customers VALUES (10006, 'Sam', 'f-12 Amar nagar', '7895463210', 'sam@gmail.com', '3402-9450-5656', 'Current', 'Active', 280600.00);
+COMMIT;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE transactions (
+  `transaction_id` int(11) NOT NULL AUTO_INCREMENT,
+  `date_of_transaction` date DEFAULT NULL,
+  `amount` int(10) DEFAULT NULL,
+  `type` char(20) DEFAULT NULL,
+  `account_no` int(10) DEFAULT NULL,
+  PRIMARY KEY (`transaction_id`)
+);
+
+--------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO transactions  VALUES (112801, '2019-10-16', 2000, 'deposit', 10001);
+INSERT INTO transactions  VALUES (112802, '2020-08-15', 2000, 'deposit', 10002);
+INSERT INTO transactions VALUES (112803, '2020-10-28', 1200, 'withdraw', 10001);
+INSERT INTO transactions VALUES (112804, '2020-10-28', 2000, 'deposit', 10002);
+INSERT INTO transactions VALUES (112805, '2020-10-03', 200, 'withdraw', 10006);
+INSERT INTO transactions VALUES (112806, '2020-12-31', 2000, 'deposit', 10005);
+COMMIT;
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+

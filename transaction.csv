@@ -1,0 +1,4 @@
+transaction_id,date_of_transaction,amount,type
+112801,2019-10-16,2000,deposit
+112803,2020-10-28,1200,withdraw
+112808,2021-01-28,50,withdraw
